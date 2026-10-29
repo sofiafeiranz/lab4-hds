@@ -2,25 +2,12 @@
 
 This folder builds a patient-level feature table from the TCGA Lung Adenocarcinoma PanCancer Atlas SQLite database. The final table has one row for each of the 566 patients.
 
-## Requirements
-
-The work requires:
-
-- SQLite 3
-- Python 3
-- Jupyter Notebook
-- pandas
-
-The notebook includes `%pip install pandas`, so it checks for pandas when it
-runs.
-
 ## Folder structure
 
 ```text
 Lab4/
   README.md
   AI_USAGE.md
-  cohort.db
   lab4_queries.sql
   feature_table.ipynb
   outputs/
@@ -28,7 +15,7 @@ Lab4/
     data_dictionary.tsv
 ```
 
-`cohort.db` is the input SQLite database.
+The input database is not included in this folder.
 
 `lab4_queries.sql` contains the Task 2 SQL queries, compact previews, row-count checks, and the base query used for the feature table.
 
@@ -44,8 +31,12 @@ which responses needed correction.
 
 ## Input database
 
-The input is `cohort.db` in this folder. It contains de-identified data from
-the Lung Adenocarcinoma TCGA PanCancer Atlas study:
+The database is not included in this folder. Request the data from the author.
+After receiving it, save the database in this `Lab4` folder and name it
+`cohort.db`.
+
+The database contains de-identified data from the Lung Adenocarcinoma TCGA
+PanCancer Atlas study:
 
 <https://www.cbioportal.org/study/summary?id=luad_tcga_pan_can_atlas_2018>
 
