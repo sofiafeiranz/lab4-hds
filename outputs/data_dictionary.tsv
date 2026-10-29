@@ -1,0 +1,12 @@
+column_name	meaning	units	source_table	missing_value_handling
+patient_id	Unique patient identifier in the TCGA Lung Adenocarcinoma PanCancer Atlas cohort	identifier	patients	Not expected; this is the patient key.
+sex	Patient sex from the study's clinical data	category	patients	NA means not recorded.
+age_at_diagnosis	Age at diagnosis from the study's clinical data	years	patients	NA means not recorded.
+stage	American Joint Committee on Cancer (AJCC) tumor stage code	category	patients	NA means not recorded.
+tissue_source_site	TCGA code for the site that supplied the tumor sample	category	samples	NA means not recorded.
+tmb_nonsynonymous	Nonsynonymous tumor mutation burden for the tumor sample	mutations per megabase	samples	NA means not recorded.
+TP53_protein_altering_count	Number of non-Silent TP53 mutations in the patient's tumor sample	count	mutations (joined through samples)	0 means no qualifying mutation; Silent mutations are excluded.
+KRAS_protein_altering_count	Number of non-Silent KRAS mutations in the patient's tumor sample	count	mutations (joined through samples)	0 means no qualifying mutation; Silent mutations are excluded.
+EGFR_protein_altering_count	Number of non-Silent EGFR mutations in the patient's tumor sample	count	mutations (joined through samples)	0 means no qualifying mutation; Silent mutations are excluded.
+STK11_protein_altering_count	Number of non-Silent STK11 mutations in the patient's tumor sample	count	mutations (joined through samples)	0 means no qualifying mutation; Silent mutations are excluded.
+KEAP1_protein_altering_count	Number of non-Silent KEAP1 mutations in the patient's tumor sample	count	mutations (joined through samples)	0 means no qualifying mutation; Silent mutations are excluded.
